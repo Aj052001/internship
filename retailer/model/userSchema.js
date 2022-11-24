@@ -60,13 +60,19 @@ const userSchema = new mongooose.Schema({
     type: Number,
     required: true,
   },
-  "Add Drug License number": {
+  "Drug License number": {
     type:Number,
     required: true,
+  },
+  "Drug License Image":{
+    type:String,
   },
   "GSTIN Number": {
     type: Number,
     required: true,
+  },
+  "GST Certificate Image":{
+    type:String,
   },
   "Pan Number": {
     type: String,
