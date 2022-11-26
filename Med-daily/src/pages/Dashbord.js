@@ -1,55 +1,57 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Dashbord() {
   return (
     <>
-   
+
+{/* Layout wrapper */}
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
-        
+      {/* <!-- Menu --> */}
 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
           <div class="app-brand demo">
-            <a href="index.html" class="app-brand-link">
+            <Link to="/" class="app-brand-link">
               <img  src="../assets/img/logo1.png" alt=""/>
-            </a>
+            </Link>
 
-            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+            <Link to="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
               <i class="bx bx-chevron-left bx-sm align-middle"></i>
-            </a>
+            </Link>
           </div>
 
           <div class="menu-inner-shadow"></div>
 
           <ul class="menu-inner py-1">
             <li class="menu-item ">
-              <a href="index.html" class="menu-link">
+              <Link to="/" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
-              </a>
+              </Link>
             </li>
-
+            {/* <!-- Layouts --> */}
             <li class="menu-item active">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <Link to="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-box"></i>
                 <div data-i18n="Layouts">vendor Management</div>
-              </a>
+              </Link>
 
               <ul class="menu-sub">
                 <li class="menu-item active">
-                  <a href="distributorlist.html" class="menu-link">
+                  <Link to="/distributorlist" class="menu-link">
                     <div data-i18n="Without menu">Distributor List</div>
-                  </a>
+                  </Link>
                 </li>
                 <li class="menu-item">
-                  <a href="distributorrequest.html" class="menu-link">
+                  <Link to="/distributorrequest" class="menu-link">
                     <div data-i18n="Without navbar">Distributor Request</div>
-                  </a>
+                  </Link>
                 </li>
                 <li class="menu-item">
-                  <a href="adddis.html" class="menu-link">
+                  <Link to="/adddis" class="menu-link">
                     <div data-i18n="Container">Add distributor</div>
-                  </a>
+                  </Link>
                 </li>
                 
               </ul>
@@ -57,35 +59,35 @@ export default function Dashbord() {
 			
 			
 			 <li class="menu-item">
-              <a href="#" class="menu-link menu-toggle">
+              <Link to="#" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-box"></i>
                 <div data-i18n="Layouts">Retailer Management</div>
-              </a>
+              </Link>
 
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="retailerlist.html" class="menu-link">
+                  <Link to="/retailerlist" class="menu-link">
                     <div data-i18n="Without menu">Retailer List</div>
-                  </a>
+                  </Link>
                 </li>
                 <li class="menu-item">
-                  <a href="retailerrequest.html" class="menu-link">
+                  <Link to="/retailerrequest" class="menu-link">
                     <div data-i18n="Without navbar">Retailer Request</div>
-                  </a>
+                  </Link>
                 </li>
                 <li class="menu-item">
-                  <a href="addret.html" class="menu-link">
+                  <Link to="/addret" class="menu-link">
                     <div data-i18n="Container">Add Retailer</div>
-                  </a>
+                  </Link>
                 </li>
                 
               </ul>
             </li>
 			 <li class="menu-item">
-              <a href="#" class="menu-link menu-toggle">
+              <Link to="#" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-box"></i>
                 <div data-i18n="Layouts">Products</div>
-              </a>
+              </Link>
 
              
             </li>
@@ -102,9 +104,9 @@ export default function Dashbord() {
             id="layout-navbar"
           >
             <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+              <Link class="nav-item nav-link px-0 me-xl-4" to="javascript:void(0)">
                 <i class="bx bx-menu bx-sm"></i>
-              </a>
+              </Link>
             </div>
 
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
@@ -122,26 +124,25 @@ export default function Dashbord() {
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <li class="nav-item lh-1 me-3">
-                  <a
+                  <Link
                     class="github-button"
-                    href="https://github.com/themeselection/sneat-html-admin-template-free"
+                    to="https://github.com/themeselection/sneat-html-admin-template-free"
                     data-icon="octicon-star"
                     data-size="large"
                     data-show-count="true"
                     aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
-                    >Star</a
-                  >
+                    >Star</Link>
                 </li>
 
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <Link class="nav-link dropdown-toggle hide-arrow" to="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
                       <img src="../assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
                     </div>
-                  </a>
+                  </Link>
                   <ul class="dropdown-menu dropdown-menu-end">
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <Link class="dropdown-item" to="#">
                         <div class="d-flex">
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
@@ -153,40 +154,40 @@ export default function Dashbord() {
                             <small class="text-muted">Admin</small>
                           </div>
                         </div>
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <Link class="dropdown-item" to="#">
                         <i class="bx bx-user me-2"></i>
                         <span class="align-middle">My Profile</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <Link class="dropdown-item" to="#">
                         <i class="bx bx-cog me-2"></i>
                         <span class="align-middle">Settings</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <Link class="dropdown-item" to="#">
                         <span class="d-flex align-items-center align-middle">
                           <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
                           <span class="flex-grow-1 align-middle">Billing</span>
                           <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
                         </span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="auth-login-basic.html">
+                      <Link class="dropdown-item" to="auth-login-basic.html">
                         <i class="bx bx-power-off me-2"></i>
                         <span class="align-middle">Log Out</span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
