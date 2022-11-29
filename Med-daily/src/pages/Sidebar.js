@@ -20,7 +20,7 @@ export default function Sidebar() {
     <ul className="menu-inner py-1">
 
       <li className="menu-item ">
-        <Link to="/" className="menu-link">
+        <Link to="/adddis" className="menu-link">
           <i className="menu-icon tf-icons bx bx-home-circle"></i>
           <div data-i18n="Analytics">Dashboard</div>
         </Link>

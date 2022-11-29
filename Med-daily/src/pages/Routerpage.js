@@ -20,18 +20,18 @@ export default function Routerpage() {
     <>
     <Router>
         <Switch>
-           <Route path = '/' exact component={Dashbord} />
-           <Route path = '/adddis' exact component={Adddis} />
-           <Route path = '/addret' exact component={Addret} />
-           <Route path = '/distributordetails' exact component={Distributordetails} />
-           <Route path = '/distributordetailsr' exact component={Distributordetailsr} />
-           <Route path = '/distributorlist' exact component={Distributorlist} />
-           <Route path = '/distributorrequest' exact component={Distributorrequest} />
-           <Route path = '/login' exact component={Login} />
-           <Route path = '/retailerdetails' exact component={Retailerdetails} />
-           <Route path = '/retailerdetailsr' exact component={Retailerdetailsr} />
-           <Route path = '/retailerlist' exact component={Retailerlist} />
-           <Route path = '/retailerrequest' exact component={Retailerrequest} />
+           <Route  exact path = '/'  component={Dashbord} />
+           <Route path = '/adddis'  component={Adddis} />
+           <Route path = '/addret'  component={Addret} />
+           <Route path = '/distributordetails' component={Distributordetails} />
+           <Route path = '/distributordetailsr' component={Distributordetailsr} />
+           <Route path = '/distributorlist' component={Distributorlist} />
+           <Route path = '/distributorrequest' component={Distributorrequest} />
+           <Route path = '/login' component={Login} />
+           <Route path = '/retailerdetails'  component={Retailerdetails} />
+           <Route path = '/retailerdetailsr' component={Retailerdetailsr} />
+           <Route path = '/retailerlist'  component={Retailerlist} />
+           <Route path = '/retailerrequest'  component={Retailerrequest} />
 
         </Switch>
     </Router>
