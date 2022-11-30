@@ -147,69 +147,17 @@ export default function Distributorlist() {
                         <td>6380774800</td>
                         <td>
                           <div className="dropdown">
-                           <Link className="dropdown-item" to="distributordetails.html"
+                           <Link className="dropdown-item" to="/distributordetails"
                                 > View Full Details</Link
                               >
                            
                           </div>
                         </td>
                       </tr>
-					   <tr>
-                        <td><i className="fab fa-angular fa-lg text-danger me-3"></i> <strong>Prabhahar</strong></td>
-                        <td>Medi</td>
-                        <td>28, balaji street, barani nagar,vannar pettai.</td>
-                        <td>6380774800</td>
-                        <td>
-                          <div className="dropdown">
-                           <Link className="dropdown-item" to="distributordetails.html"
-                                > View Full Details</Link
-                              >
-                           
-                          </div>
-                        </td>
-                      </tr>
-					   <tr>
-                        <td><i className="fab fa-angular fa-lg text-danger me-3"></i> <strong>Prabhahar</strong></td>
-                        <td>Medi</td>
-                        <td>28, balaji street, barani nagar,vannar pettai.</td>
-                        <td>6380774800</td>
-                        <td>
-                          <div className="dropdown">
-                           <Link className="dropdown-item" to="distributordetails.html"
-                                > View Full Details</Link
-                              >
-                           
-                          </div>
-                        </td>
-                      </tr>
-					   <tr>
-                        <td><i className="fab fa-angular fa-lg text-danger me-3"></i> <strong>Prabhahar</strong></td>
-                        <td>Medi</td>
-                        <td>28, balaji street, barani nagar,vannar pettai.</td>
-                        <td>6380774800</td>
-                        <td>
-                          <div className="dropdown">
-                           <Link className="dropdown-item" to="distributordetails.html"
-                                > View Full Details</Link
-                              >
-                           
-                          </div>
-                        </td>
-                      </tr>
-					   <tr>
-                        <td><i className="fab fa-angular fa-lg text-danger me-3"></i> <strong>Prabhahar</strong></td>
-                        <td>Medi</td>
-                        <td>28, balaji street, barani nagar,vannar pettai.</td>
-                        <td>6380774800</td>
-                        <td>
-                          <div className="dropdown">
-                           <Link className="dropdown-item" to="distributordetails.html"
-                                > View Full Details</Link
-                              >
-                           
-                          </div>
-                        </td>
-                      </tr>
+					  
+					
+					
+					 
                     </tbody>
                   </table>
                 </div>
@@ -218,19 +166,7 @@ export default function Distributorlist() {
           
 
           
-           <footer className="content-footer footer bg-footer-theme">
-              <div className="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                <div className="mb-2 mb-md-0">
-                  ©
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  , by
-                  <Link to="#" target="_blank" className="footer-link fw-bolder">Meddaily</Link>
-                </div>
-                
-              </div>
-            </footer>
+        
       
 
             <div className="content-backdrop fade"></div>
