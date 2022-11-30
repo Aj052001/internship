@@ -20,7 +20,7 @@ export default function Distributordetails() {
             id="layout-navbar"
           >
             <div className="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-              <Link className="nav-item nav-link px-0 me-xl-4" to="javascript:void(0)">
+              <Link className="nav-item nav-link px-0 me-xl-4" to="/">
                 <i className="bx bx-menu bx-sm"></i>
               </Link>
             </div>

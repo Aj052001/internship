@@ -12,6 +12,7 @@ import Retailerdetails from './Retailerdetails'
 import Retailerdetailsr from './Retailerdetailsr'
 import Retailerlist from './Retailerlist'
 import Retailerrequest from './Retailerrequest'
+import Sidebar from './Sidebar'
 
 
 
@@ -32,6 +33,7 @@ export default function Routerpage() {
            <Route path = '/retailerdetailsr' component={Retailerdetailsr} />
            <Route path = '/retailerlist'  component={Retailerlist} />
            <Route path = '/retailerrequest'  component={Retailerrequest} />
+           <Route path = '/sidebar'  component={Sidebar} />
 
         </Switch>
     </Router>
