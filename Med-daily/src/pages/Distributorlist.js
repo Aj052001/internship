@@ -148,8 +148,7 @@ export default function Distributorlist() {
                         <td>
                           <div className="dropdown">
                            <Link className="dropdown-item" to="/distributordetails"
-                                > View Full Details</Link
-                              >
+                                > View Full Details</Link>
                            
                           </div>
                         </td>

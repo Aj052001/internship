@@ -1,7 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Sidebar from './Sidebar'
+import { useHistory } from 'react-router-dom';
 export default function Addret() {
+  let history = useHistory();
+  function handleclick()
+  {
+    history.push("/")
+  }
   return (
    
    <>
@@ -138,7 +144,7 @@ export default function Addret() {
                       <form id="formAccountSettings" method="POST" onsubmit="return false">
                         <div className="row">
                           <div className="mb-3 col-md-6">
-                            <label for="firstName" className="form-label">Owner Name</label>
+                            <label for="firstName" className="form-label" class="float-start">Owner Name</label>
                             <input
                               className="form-control"
                               type="text"
@@ -149,11 +155,11 @@ export default function Addret() {
                             />
                           </div>
                           <div className="mb-3 col-md-6">
-                            <label for="lastName" className="form-label">Business Name</label>
+                            <label for="lastName" className="form-label" class="float-start">Business Name</label>
                             <input className="form-control" type="text" name="lastName" id="lastName" value="Doe" />
                           </div>
 						    <div className="mb-3 col-md-6">
-                            <label for="organization" className="form-label">Business Type</label>
+                            <label for="organization" className="form-label" class="float-start">Business Type</label>
                             <input
                               type="text"
                               className="form-control"
@@ -163,7 +169,7 @@ export default function Addret() {
                             />
                           </div>
 						  <div className="mb-3 col-md-6">
-                            <label className="form-label" for="phoneNumber">Phone Number</label>
+                            <label className="form-label" for="phoneNumber" class="float-start">Phone Number</label>
                             <div className="input-group input-group-merge">
                               <span className="input-group-text">IN (+91)</span>
                               <input
@@ -176,7 +182,7 @@ export default function Addret() {
                             </div>
                           </div>
                           <div className="mb-3 col-md-6">
-                            <label for="email" className="form-label">E-mail</label>
+                            <label for="email" className="form-label" class="float-start">E-mail</label>
                             <input
                               className="form-control"
                               type="text"
@@ -188,7 +194,7 @@ export default function Addret() {
                           </div>
                         
                            <div className="mb-3 col-md-6">
-                            <label for="zipCode" className="form-label">Postal Code</label>
+                            <label for="zipCode" className="form-label" class="float-start">Postal Code</label>
                             <input
                               type="text"
                               className="form-control"
@@ -199,36 +205,36 @@ export default function Addret() {
                             />
                           </div>
                           <div className="mb-3 col-md-6">
-                            <label for="address" className="form-label">City</label>
+                            <label for="address" className="form-label" class="float-start">City</label>
                             <input type="text" className="form-control" id="City" name="City" placeholder="City" />
                           </div>
                           <div className="mb-3 col-md-6">
-                            <label for="state" className="form-label">Area</label>
+                            <label for="state" className="form-label" class="float-start">Area</label>
                             <input className="form-control" type="text" id="Area" name="Area" placeholder="Area" />
                           </div>
                          
                          <div className="mb-3 col-md-6">
-                            <label for="timeZones" className="form-label">Drug Licence No</label>
+                            <label for="timeZones" className="form-label" class="float-start">Drug Licence No</label>
                             <input className="form-control" type="text" id="gst" name="gst" placeholder="12123323423" />
                           </div>
                           <div className="mb-3 col-md-6">
-                             <label for="timeZones" className="form-label">Drug Licence img</label>
+                             <label for="timeZones" className="form-label" class="float-start">Drug Licence img</label>
                             <input className="form-control" type="text" id="gst" name="gst" placeholder="view/img.jpg" />
                           </div>
                           <div className="mb-3 col-md-6">
-                            <label for="timeZones" className="form-label">Gst No</label>
+                            <label for="timeZones" className="form-label" class="float-start">Gst No</label>
                             <input className="form-control" type="text" id="gst" name="gst" placeholder="12123323423" />
                           </div>
                           <div className="mb-3 col-md-6">
-                             <label for="timeZones" className="form-label">Gst img</label>
+                             <label for="timeZones" className="form-label" class="float-start">Gst img</label>
                             <input className="form-control" type="text" id="gst" name="gst" placeholder="view/img.jpg" />
                           </div>
 						   <div className="mb-3 col-md-6">
-                            <label for="timeZones" className="form-label">Pan No</label>
+                            <label for="timeZones" className="form-label" class="float-start">Pan No</label>
                             <input className="form-control" type="text" id="gst" name="gst" placeholder="12123323423" />
                           </div>
                           <div className="mb-3 col-md-6">
-                             <label for="timeZones" className="form-label">Pan img</label>
+                             <label for="timeZones" className="form-label" class="float-start">Pan img</label>
                             <input className="form-control" type="text" id="gst" name="gst" placeholder="view/img.jpg" />
                           </div>
                         </div>

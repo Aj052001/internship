@@ -13,6 +13,7 @@ import Retailerdetailsr from './Retailerdetailsr'
 import Retailerlist from './Retailerlist'
 import Retailerrequest from './Retailerrequest'
 import Sidebar from './Sidebar'
+import Gstinfo from './Gstinfo'
 
 
 
@@ -34,6 +35,7 @@ export default function Routerpage() {
            <Route path = '/retailerlist'  component={Retailerlist} />
            <Route path = '/retailerrequest'  component={Retailerrequest} />
            <Route path = '/sidebar'  component={Sidebar} />
+           <Route path = '/gstinfo'  component={Gstinfo} />
 
         </Switch>
     </Router>

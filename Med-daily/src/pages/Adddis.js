@@ -138,7 +138,7 @@ export default function Adddis() {
                       <form id="formAccountSettings" method="POST" onsubmit="return false">
                         <div className="row">
                           <div className="mb-3 col-md-6">
-                            <label for="firstName" className="form-label">First Name</label>
+                            <label for="firstName" className="form-label" class="float-start">First Name</label>
                             <input
                               className="form-control"
                               type="text"
@@ -149,11 +149,11 @@ export default function Adddis() {
                             />
                           </div>
                           <div className="mb-3 col-md-6">
-                            <label for="lastName" className="form-label">Last Name</label>
+                            <label for="lastName" className="form-label" class="float-start">Last Name</label>
                             <input className="form-control" type="text" name="lastName" id="lastName" value="Doe" />
                           </div>
 						  <div className="mb-3 col-md-6">
-                            <label className="form-label" for="phoneNumber">Phone Number</label>
+                            <label className="form-label" for="phoneNumber" class="float-start">Phone Number</label>
                             <div className="input-group input-group-merge">
                               <span className="input-group-text">IN (+91)</span>
                               <input
@@ -166,7 +166,7 @@ export default function Adddis() {
                             </div>
                           </div>
                           <div className="mb-3 col-md-6">
-                            <label for="email" className="form-label">E-mail</label>
+                            <label for="email" className="form-label" class="float-start">E-mail</label>
                             <input
                               className="form-control"
                               type="text"
@@ -177,7 +177,7 @@ export default function Adddis() {
                             />
                           </div>
                           <div className="mb-3 col-md-6">
-                            <label for="organization" className="form-label">Business name</label>
+                            <label for="organization" className="form-label" class="float-start">Business name</label>
                             <input
                               type="text"
                               className="form-control"
@@ -187,7 +187,7 @@ export default function Adddis() {
                             />
                           </div>
                            <div className="mb-3 col-md-6">
-                            <label for="zipCode" className="form-label">Postal Code</label>
+                            <label for="zipCode" className="form-label" class="float-start">Postal Code</label>
                             <input
                               type="text"
                               className="form-control"
@@ -198,16 +198,16 @@ export default function Adddis() {
                             />
                           </div>
                           <div className="mb-3 col-md-6">
-                            <label for="address" className="form-label">City</label>
+                            <label for="address" className="form-label" class="float-start">City</label>
                             <input type="text" className="form-control" id="City" name="City" placeholder="City" />
                           </div>
                           <div className="mb-3 col-md-6">
-                            <label for="state" className="form-label">Area</label>
+                            <label for="state" className="form-label" class="float-start">Area</label>
                             <input className="form-control" type="text" id="Area" name="Area" placeholder="Area" />
                           </div>
                          
                           <div className="mb-3 col-md-6">
-                            <label className="form-label" for="country">Distributor Code</label>
+                            <label className="form-label" for="country" class="float-start">Distributor Code</label>
                             <select id="country" className="select2 form-select">
                               <option value="">Select</option>
                               <option value="Australia">Australia</option>
@@ -237,7 +237,7 @@ export default function Adddis() {
                             </select>
                           </div>
                           <div className="mb-3 col-md-6">
-                            <label for="language" className="form-label">Distributor Type</label>
+                            <label for="language" className="form-label" class="float-start">Distributor Type</label>
                             <select id="language" className="select2 form-select">
                               <option value="">Select </option>
                               <option value="en">English</option>
@@ -247,19 +247,19 @@ export default function Adddis() {
                             </select>
                           </div>
                           <div className="mb-3 col-md-6">
-                            <label for="timeZones" className="form-label">Gst No</label>
+                            <label for="timeZones" className="form-label" class="float-start">Gst No</label>
                             <input className="form-control" type="text" id="gst" name="gst" placeholder="12123323423" />
                           </div>
                           <div className="mb-3 col-md-6">
-                             <label for="timeZones" className="form-label">Gst img</label>
+                             <label for="timeZones" className="form-label" class="float-start">Gst img</label>
                             <input className="form-control" type="text" id="gst" name="gst" placeholder="view/img.jpg" />
                           </div>
 						   <div className="mb-3 col-md-6">
-                            <label for="timeZones" className="form-label">Pan No</label>
+                            <label for="timeZones" className="form-label" class="float-start">Pan No</label>
                             <input className="form-control" type="text" id="gst" name="gst" placeholder="12123323423" />
                           </div>
                           <div className="mb-3 col-md-6">
-                             <label for="timeZones" className="form-label">Pan img</label>
+                             <label for="timeZones" className="form-label" class="float-start">Pan img</label>
                             <input className="form-control" type="text" id="gst" name="gst" placeholder="view/img.jpg" />
                           </div>
                         </div>
