@@ -1,7 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Sidebar from './Sidebar'
+import Sidebar from './Sidebar';
+import { useHistory } from 'react-router-dom';
 export default function Distributordetails() {
+  let history = useHistory();
+  function handleclick()
+  {
+    history.push("#")
+  }
   return (
    <>
       <div className="layout-wrapper layout-content-navbar">
@@ -190,6 +196,20 @@ export default function Distributordetails() {
                          
                         </div>
                       </form>
+                       {/* button */}
+                       <div class="col-12">
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          style={{
+                            backgroundColor: "Darkblue",
+                            border: "Darkblue",
+                          }}
+                          onClick={handleclick}
+                        >
+                          Approve and add
+                        </button>
+                      </div>
                     </div>
                  
                   </div>

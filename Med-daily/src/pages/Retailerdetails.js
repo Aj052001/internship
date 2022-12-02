@@ -1,8 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Sidebar from './Sidebar'
+import { useHistory } from 'react-router-dom';
 export default function Retailerdetails() {
+
+  let history = useHistory();
+  function handleclick()
+  {
+    history.push("#")
+  }
+
   return (
+
     <>
      <div className="layout-wrapper layout-content-navbar">
       <div className="layout-container">
@@ -236,6 +245,21 @@ export default function Retailerdetails() {
                          
                         </div>
                       </form>
+
+                        {/* button */}
+                        <div class="col-12">
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          style={{
+                            backgroundColor: "Darkblue",
+                            border: "Darkblue",
+                          }}
+                          onClick={handleclick}
+                        >
+                          Approve and add
+                        </button>
+                      </div>
                     </div>
                     
                   </div>

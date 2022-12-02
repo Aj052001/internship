@@ -26,6 +26,8 @@ export default function Sidebar() {
             </li>
      
 
+
+      { /* Vendor Management */}
         <li className="menu-item active">
           <Dropdown>
             <Dropdown.Toggle
@@ -56,6 +58,9 @@ export default function Sidebar() {
           </Dropdown>
         </li>
 
+
+
+{/* Retailer Management */}
         <li className="menu-item">
           <Dropdown>
             <Dropdown.Toggle
@@ -86,6 +91,9 @@ export default function Sidebar() {
           </Dropdown>
         </li>
 
+
+
+        {/* Products */}
         <li className="menu-item">
           <Dropdown>
             <Dropdown.Toggle
@@ -95,8 +103,117 @@ export default function Sidebar() {
               <i className="menu-icon tf-icons bx bx-box"></i>
               <div data-i18n="Layouts">Products</div>
             </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <li className="menu-item active">
+                <Link to="/distributorlist" className="menu-link">
+                  <div data-i18n="Without menu">View Products</div>
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link to="/distributorrequest" className="menu-link">
+                  <div data-i18n="Without navbar">Add new Products</div>
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link to="/adddis" className="menu-link">
+                  <div data-i18n="Container">Bul Add</div>
+                </Link>
+              </li>
+            </Dropdown.Menu>
           </Dropdown>
         </li>
+
+        {/* Orgders */}
+        <li className="menu-item">
+          <Dropdown>
+            <Dropdown.Toggle
+              variant="success"
+              className="menu-link menu-toggle"
+            >
+              <i className="menu-icon tf-icons bx bx-box"></i>
+              <div data-i18n="Layouts">Orders</div>
+            </Dropdown.Toggle>
+
+            {/* <Dropdown.Menu>
+              <li className="menu-item active">
+                <Link to="/distributorlist" className="menu-link">
+                  <div data-i18n="Without menu">Distributor List</div>
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link to="/distributorrequest" className="menu-link">
+                  <div data-i18n="Without navbar">Distributor Request</div>
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link to="/adddis" className="menu-link">
+                  <div data-i18n="Container">Add distributor</div>
+                </Link>
+              </li>
+            </Dropdown.Menu> */}
+          </Dropdown>
+        </li>
+
+
+        {/* Settings */}
+        <li className="menu-item ">
+          <Dropdown>
+            <Dropdown.Toggle
+              variant="success"
+              className="menu-link menu-toggle"
+            >
+              <i className="menu-icon tf-icons bx bx-box"></i>
+              <div data-i18n="Layouts">Settings</div>
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <li className="menu-item active">
+                <Link to="/distributorlist" className="menu-link">
+                  <div data-i18n="Without menu">Websites Banner</div>
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link to="/distributorrequest" className="menu-link">
+                  <div data-i18n="Without navbar">App Banner</div>
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link to="/adddis" className="menu-link">
+                  <div data-i18n="Container">Profile Setting</div>
+                </Link>
+              </li>
+            </Dropdown.Menu>
+          </Dropdown>
+        </li>
+
+        {/* Offer and deal */}
+        <li className="menu-item ">
+          <Dropdown>
+            <Dropdown.Toggle
+              variant="success"
+              className="menu-link menu-toggle"
+            >
+              <i className="menu-icon tf-icons bx bx-box"></i>
+              <div data-i18n="Layouts">Offers & Deal</div>
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <li className="menu-item active">
+                <Link to="/distributorlist" className="menu-link">
+                  <div data-i18n="Without menu">Create Offers</div>
+                </Link>
+              </li>
+              <li className="menu-item">
+                <Link to="/distributorrequest" className="menu-link">
+                  <div data-i18n="Without navbar">All Offers</div>
+                </Link>
+              </li>
+            </Dropdown.Menu>
+          </Dropdown>
+        </li>
+
+
       </ul>
     </aside>
   );
