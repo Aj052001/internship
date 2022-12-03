@@ -106,17 +106,17 @@ export default function Sidebar() {
 
             <Dropdown.Menu>
               <li className="menu-item active">
-                <Link to="/distributorlist" className="menu-link">
+                <Link to="/producttable" className="menu-link">
                   <div data-i18n="Without menu">View Products</div>
                 </Link>
               </li>
               <li className="menu-item">
-                <Link to="/distributorrequest" className="menu-link">
+                <Link to="/addproduct" className="menu-link">
                   <div data-i18n="Without navbar">Add new Products</div>
                 </Link>
               </li>
               <li className="menu-item">
-                <Link to="/adddis" className="menu-link">
+                <Link to="/addbul" className="menu-link">
                   <div data-i18n="Container">Bul Add</div>
                 </Link>
               </li>
@@ -125,35 +125,12 @@ export default function Sidebar() {
         </li>
 
         {/* Orgders */}
-        <li className="menu-item">
-          <Dropdown>
-            <Dropdown.Toggle
-              variant="success"
-              className="menu-link menu-toggle"
-            >
+        <li class="menu-item ">
+              <Link to="/ordertable" class="menu-link">
               <i className="menu-icon tf-icons bx bx-box"></i>
-              <div data-i18n="Layouts">Orders</div>
-            </Dropdown.Toggle>
-
-            {/* <Dropdown.Menu>
-              <li className="menu-item active">
-                <Link to="/distributorlist" className="menu-link">
-                  <div data-i18n="Without menu">Distributor List</div>
-                </Link>
-              </li>
-              <li className="menu-item">
-                <Link to="/distributorrequest" className="menu-link">
-                  <div data-i18n="Without navbar">Distributor Request</div>
-                </Link>
-              </li>
-              <li className="menu-item">
-                <Link to="/adddis" className="menu-link">
-                  <div data-i18n="Container">Add distributor</div>
-                </Link>
-              </li>
-            </Dropdown.Menu> */}
-          </Dropdown>
-        </li>
+                <div data-i18n="Analytics">Orders</div>
+              </Link>
+            </li>
 
 
         {/* Settings */}
@@ -169,17 +146,17 @@ export default function Sidebar() {
 
             <Dropdown.Menu>
               <li className="menu-item active">
-                <Link to="/distributorlist" className="menu-link">
+                <Link to="#" className="menu-link">
                   <div data-i18n="Without menu">Websites Banner</div>
                 </Link>
               </li>
               <li className="menu-item">
-                <Link to="/distributorrequest" className="menu-link">
+                <Link to="#" className="menu-link">
                   <div data-i18n="Without navbar">App Banner</div>
                 </Link>
               </li>
               <li className="menu-item">
-                <Link to="/adddis" className="menu-link">
+                <Link to="#" className="menu-link">
                   <div data-i18n="Container">Profile Setting</div>
                 </Link>
               </li>

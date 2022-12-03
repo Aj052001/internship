@@ -14,6 +14,10 @@ import Retailerlist from './Retailerlist'
 import Retailerrequest from './Retailerrequest'
 import Sidebar from './Sidebar'
 import Gstinfo from './Gstinfo'
+import Producttable from './Producttable'
+import Addproduct from './Addproduct'
+import Addbul from './Addbul'
+import Ordertable from './Ordertable'
 
 
 
@@ -36,6 +40,10 @@ export default function Routerpage() {
            <Route path = '/retailerrequest'  component={Retailerrequest} />
            <Route path = '/sidebar'  component={Sidebar} />
            <Route path = '/gstinfo'  component={Gstinfo} />
+           <Route path = '/producttable'  component={Producttable} />
+           <Route path = '/addproduct'  component={Addproduct} />
+           <Route path = '/addbul'  component={Addbul} />
+           <Route path = '/ordertable'  component={Ordertable} />
 
         </Switch>
     </Router>

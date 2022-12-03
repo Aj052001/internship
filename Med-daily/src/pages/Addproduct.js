@@ -1,25 +1,20 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Sidebar from './Sidebar';
-import { useHistory } from 'react-router-dom';
-export default function Distributordetails() {
-  let history = useHistory();
-  function handleclick()
-  {
-    history.push("#")
-  }
-  return (
-   <>
-      <div className="layout-wrapper layout-content-navbar">
-      <div className="layout-container">
-       
+import Sidebar from './Sidebar'
 
-    <Sidebar/>
+export default function Addproduct() {
+  return (
+    <>
+     <div className="layout-wrapper layout-content-navbar">
+      <div className="layout-container">
       
 
-        
+       <Sidebar/>
+       
+
+      
         <div className="layout-page">
-          
+        
 
           <nav
             className="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
@@ -32,6 +27,7 @@ export default function Distributordetails() {
             </div>
 
             <div className="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+             
               <div className="navbar-nav align-items-center">
                 <div className="nav-item d-flex align-items-center">
                   <i className="bx bx-search fs-4 lh-0"></i>
@@ -43,18 +39,19 @@ export default function Distributordetails() {
                   />
                 </div>
               </div>
-              
+           
+
               <ul className="navbar-nav flex-row align-items-center ms-auto">
-                
+              
                 <li className="nav-item lh-1 me-3">
-                  <a
+                  <Link
                     className="github-button"
                     to="https://github.com/themeselection/sneat-html-admin-template-free"
                     data-icon="octicon-star"
                     data-size="large"
                     data-show-count="true"
                     aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
-                    >Star</a
+                    >Star</Link
                   >
                 </li>
 
@@ -115,55 +112,26 @@ export default function Distributordetails() {
                     </li>
                   </ul>
                 </li>
-                
+              
               </ul>
             </div>
           </nav>
 
        
 
-      
+
+
+        
           <div className="content-wrapper">
-           
+          
 
             <div className="container-xxl flex-grow-1 container-p-y">
           <div className="row">
       
                   <div className="card mb-12">
-
-                    {/* Gst Info */}
                     <div className="card-header d-flex justify-content-between align-items-center">
-                      <h5 className="mb-0">Gst Information</h5>
-                      
-                    </div>
-                   
-                   
-                    <hr className="my-0" />
-                    <div className="card-body">
-                      <form id="formAccountSettings" method="POST" onsubmit="return false">
-                        <div className="row">
-                         
-						   <div className="mb-3 col-md-6">
-                            <label for="timeZones" className="form-label" class="float-start">GST NO.</label>
-                            <input className="form-control" type="text" id="gst" name="gst" placeholder="12123323423" />
-                          </div>
-                          <div className="mb-3 col-md-6">
-                             <label for="timeZones" className="form-label" class="float-start">GST img</label>
-                            <input className="form-control" type="text" id="gst" name="gst" placeholder="view/img.jpg" />
-                          </div>
-                        </div>
-                        <div className="mt-2">
-                         
-                        </div>
-                      </form>
-                    </div>
-
-
-
-                    {/* Bank details */}
-                    <div className="card-header d-flex justify-content-between align-items-center">
-                      <h5 className="mb-0">Bank Information</h5>
-                      
+                      <h5 className="mb-0">ADD Product</h5>
+                      <small className="text-muted float-end">Default label</small>
                     </div>
                    
                    
@@ -172,67 +140,81 @@ export default function Distributordetails() {
                       <form id="formAccountSettings" method="POST" onsubmit="return false">
                         <div className="row">
                           <div className="mb-3 col-md-6">
-                             <label for="timeZones" className="form-label" class="float-start">Bank Name</label>
-                            <input className="form-control" type="text" id="gst" name="gst" placeholder="view/img.jpg" />
-                          </div>
-						   <div className="mb-3 col-md-6">
-                            <label for="timeZones" className="form-label" class="float-start">Benificiary Name</label>
-                            <input className="form-control" type="text" id="gst" name="gst" placeholder="12123323423" />
-                          </div>
-                          <div className="mb-3 col-md-6">
-                             <label for="timeZones" className="form-label" class="float-start">Account No.</label>
-                            <input className="form-control" type="text" id="gst" name="gst" placeholder="view/img.jpg" />
-                          </div>
-						   <div className="mb-3 col-md-6">
-                            <label for="timeZones" className="form-label" class="float-start">IFSC</label>
-                            <input className="form-control" type="text" id="gst" name="gst" placeholder="12123323423" />
+                            <label for="firstName" className="form-label" class="float-start">Product Name</label>
+                            <input
+                              className="form-control"
+                              type="text"
+                              id="firstName"
+                              name="firstName"
+                              value="Adderall"
+                              autofocus
+                            />
                           </div>
                           <div className="mb-3 col-md-6">
-                             <label for="timeZones" className="form-label" class="float-start">UPI ID</label>
-                            <input className="form-control" type="text" id="gst" name="gst" placeholder="view/img.jpg" />
+                            <label for="lastName" className="form-label" class="float-start">Mnf Type</label>
+                            <input className="form-control" type="text" name="lastName" id="lastName" value="Company" />
+                          </div>
+						  <div className="mb-3 col-md-6">
+                            <label className="form-label" for="phoneNumber" class="float-start">Med Type</label>
+                            <div className="input-group input-group-merge">
+                              
+                              <input
+                                type="text"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                className="form-control"
+                                placeholder="Genric"
+                              />
+                            </div>
+                          </div>
+                          <div className="mb-3 col-md-6">
+                            <label for="email" className="form-label" class="float-start">Discription</label>
+                            <input
+                              className="form-control"
+                              type="text"
+                              id="email"
+                              name="email"
+                              value=""
+                              placeholder="Discription"
+                            />
+                          </div>
+                          <div className="mb-3 col-md-6">
+                            <label for="organization" className="form-label" class="float-start">Taxes</label>
+                            <input
+                              type="text"
+                              className="form-control"
+                              id="organization"
+                              name="organization"
+                              value="0000"
+                            />
                           </div>
                         </div>
                         <div className="mt-2">
-                         
+                          <button type="submit" className="btn btn-primary me-2">Add</button>
+                          <button type="reset" className="btn btn-outline-secondary">Cancel</button>
                         </div>
                       </form>
-                       {/* button */}
-                       <div class="col-12">
-                        <button
-                          type="button"
-                          class="btn btn-primary"
-                          style={{
-                            backgroundColor: "Darkblue",
-                            border: "Darkblue",
-                          }}
-                          onClick={handleclick}
-                        >
-                          Approve and add
-                        </button>
-                      </div>
                     </div>
-                 
+                  
                   </div>
                  
                 
                 
               </div>
-           
-
-          
+        
           
 
             <div className="content-backdrop fade"></div>
           </div>
-         
+        
         </div>
       
       </div>
 
-   
+  
       <div className="layout-overlay layout-menu-toggle"></div>
     </div>
     </div>
-   </>
+    </>
   )
 }

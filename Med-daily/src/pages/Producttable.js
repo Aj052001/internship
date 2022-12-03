@@ -1,25 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Sidebar from './Sidebar';
-import { useHistory } from 'react-router-dom';
-export default function Distributordetails() {
-  let history = useHistory();
-  function handleclick()
-  {
-    history.push("#")
-  }
+import Sidebar from './Sidebar'
+export default function Producttable() {
   return (
-   <>
-      <div className="layout-wrapper layout-content-navbar">
+    <>
+     <div className="layout-wrapper layout-content-navbar">
       <div className="layout-container">
-       
+ 
 
-    <Sidebar/>
+      <Sidebar/>
       
 
-        
+   
         <div className="layout-page">
-          
+     
 
           <nav
             className="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
@@ -32,6 +26,7 @@ export default function Distributordetails() {
             </div>
 
             <div className="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+       
               <div className="navbar-nav align-items-center">
                 <div className="nav-item d-flex align-items-center">
                   <i className="bx bx-search fs-4 lh-0"></i>
@@ -43,9 +38,10 @@ export default function Distributordetails() {
                   />
                 </div>
               </div>
-              
+          
+
               <ul className="navbar-nav flex-row align-items-center ms-auto">
-                
+               
                 <li className="nav-item lh-1 me-3">
                   <a
                     className="github-button"
@@ -58,6 +54,7 @@ export default function Distributordetails() {
                   >
                 </li>
 
+              
                 <li className="nav-item navbar-dropdown dropdown-user dropdown">
                   <Link className="nav-link dropdown-toggle hide-arrow" to="javascript:void(0);" data-bs-toggle="dropdown">
                     <div className="avatar avatar-online">
@@ -115,124 +112,92 @@ export default function Distributordetails() {
                     </li>
                   </ul>
                 </li>
-                
+               
               </ul>
             </div>
           </nav>
 
-       
-
-      
+         
           <div className="content-wrapper">
-           
+               {/* Filter Button  */}
+               <div className="card-header d-flex justify-content-between align-items-center">
+                    <h5 className="mb-0"></h5>
+                    <div class="btn-group">
+                      <button
+                        type="button"
+                        class="btn btn-secondary dropdown-toggle"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Mediciane type
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="javascript:void(0);">Genric</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">OTC</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">Branded</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+         
 
             <div className="container-xxl flex-grow-1 container-p-y">
-          <div className="row">
-      
-                  <div className="card mb-12">
-
-                    {/* Gst Info */}
-                    <div className="card-header d-flex justify-content-between align-items-center">
-                      <h5 className="mb-0">Gst Information</h5>
-                      
-                    </div>
-                   
-                   
-                    <hr className="my-0" />
-                    <div className="card-body">
-                      <form id="formAccountSettings" method="POST" onsubmit="return false">
-                        <div className="row">
-                         
-						   <div className="mb-3 col-md-6">
-                            <label for="timeZones" className="form-label" class="float-start">GST NO.</label>
-                            <input className="form-control" type="text" id="gst" name="gst" placeholder="12123323423" />
-                          </div>
-                          <div className="mb-3 col-md-6">
-                             <label for="timeZones" className="form-label" class="float-start">GST img</label>
-                            <input className="form-control" type="text" id="gst" name="gst" placeholder="view/img.jpg" />
-                          </div>
-                        </div>
-                        <div className="mt-2">
-                         
-                        </div>
-                      </form>
-                    </div>
-
-
-
-                    {/* Bank details */}
-                    <div className="card-header d-flex justify-content-between align-items-center">
-                      <h5 className="mb-0">Bank Information</h5>
-                      
-                    </div>
-                   
-                   
-                    <hr className="my-0" />
-                    <div className="card-body">
-                      <form id="formAccountSettings" method="POST" onsubmit="return false">
-                        <div className="row">
-                          <div className="mb-3 col-md-6">
-                             <label for="timeZones" className="form-label" class="float-start">Bank Name</label>
-                            <input className="form-control" type="text" id="gst" name="gst" placeholder="view/img.jpg" />
-                          </div>
-						   <div className="mb-3 col-md-6">
-                            <label for="timeZones" className="form-label" class="float-start">Benificiary Name</label>
-                            <input className="form-control" type="text" id="gst" name="gst" placeholder="12123323423" />
-                          </div>
-                          <div className="mb-3 col-md-6">
-                             <label for="timeZones" className="form-label" class="float-start">Account No.</label>
-                            <input className="form-control" type="text" id="gst" name="gst" placeholder="view/img.jpg" />
-                          </div>
-						   <div className="mb-3 col-md-6">
-                            <label for="timeZones" className="form-label" class="float-start">IFSC</label>
-                            <input className="form-control" type="text" id="gst" name="gst" placeholder="12123323423" />
-                          </div>
-                          <div className="mb-3 col-md-6">
-                             <label for="timeZones" className="form-label" class="float-start">UPI ID</label>
-                            <input className="form-control" type="text" id="gst" name="gst" placeholder="view/img.jpg" />
-                          </div>
-                        </div>
-                        <div className="mt-2">
-                         
-                        </div>
-                      </form>
-                       {/* button */}
-                       <div class="col-12">
-                        <button
-                          type="button"
-                          class="btn btn-primary"
-                          style={{
-                            backgroundColor: "Darkblue",
-                            border: "Darkblue",
-                          }}
-                          onClick={handleclick}
-                        >
-                          Approve and add
-                        </button>
-                      </div>
-                    </div>
-                 
-                  </div>
-                 
-                
-                
+              <div className="row">
+                <div className="card">
+                <h5 className="card-header">Product Table</h5>
+                <div className="table-responsive text-nowrap">
+                  <table className="table">
+                    <thead>
+                      <tr>
+                        <th> Product Name</th>
+                        <th>Mnf Name</th>
+                        <th>Delete/Disable</th>
+                        <th>Mediciane Type</th>
+                      </tr>
+                    </thead>
+                    <tbody className="table-border-bottom-0">
+                      <tr>
+                        <td><i className="fab fa-angular fa-lg text-danger me-3"></i> <strong>Tablet</strong></td>
+                        <td>Medi</td>
+                        <td>XYZ</td>
+                        <td>Genric</td>
+                      </tr>
+                    </tbody>
+                    <tbody className="table-border-bottom-0">
+                      <tr>
+                        <td><i className="fab fa-angular fa-lg text-danger me-3"></i> <strong>Tablet</strong></td>
+                        <td>Medi</td>
+                        <td>XYZ</td>
+                        <td>Branded</td>
+                      </tr>
+                    </tbody>
+                    <tbody className="table-border-bottom-0">
+                      <tr>
+                        <td><i className="fab fa-angular fa-lg text-danger me-3"></i> <strong>Tablet</strong></td>
+                        <td>Medi</td>
+                        <td>XYZ</td>
+                        <td>OTC</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-           
+            </div>
+         
 
-          
-          
+        
+            
 
             <div className="content-backdrop fade"></div>
           </div>
-         
+    
         </div>
-      
+       
       </div>
 
-   
       <div className="layout-overlay layout-menu-toggle"></div>
     </div>
     </div>
-   </>
+    </>
   )
 }
