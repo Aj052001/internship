@@ -18,6 +18,7 @@ import Producttable from './Producttable'
 import Addproduct from './Addproduct'
 import Addbul from './Addbul'
 import Ordertable from './Ordertable'
+import Navbar from './Navbar'
 
 
 
@@ -44,6 +45,8 @@ export default function Routerpage() {
            <Route path = '/addproduct'  component={Addproduct} />
            <Route path = '/addbul'  component={Addbul} />
            <Route path = '/ordertable'  component={Ordertable} />
+           <Route path = '/navbar'  component={Navbar} />
+
 
         </Switch>
     </Router>
