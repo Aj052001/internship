@@ -12,8 +12,8 @@ const product = productdata.map((item) => {
       key={item.id}
       productname={item.productname}
       mnfname={item.mnfname}
-      delete={item.delete}
       medicinetype={item.medicinetype}
+      delete={"Action"}
     />
   );
 }); 
@@ -70,8 +70,8 @@ const product = productdata.map((item) => {
                       <tr>
                         <th> Product Name</th>
                         <th>Mnf Name</th>
-                        <th>Delete/Disable</th>
-                        <th>Mediciane Type</th>
+                        <th>Medicine Type</th>
+                        <th>Action</th>
                       </tr>
                     </thead>
                     {product}

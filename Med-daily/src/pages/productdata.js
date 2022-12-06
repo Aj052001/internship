@@ -3,7 +3,7 @@ export default[
         id:1,
         productname:"Ajay",
         mnfname:"xyz",
-        delete:"xyz",
+        
         medicinetype:"Genric"
 
     },
@@ -11,7 +11,7 @@ export default[
         id:2,
         productname:"Rohit",
         mnfname:"vus",
-        delete:"ydh",
+       
         medicinetype:"OTC"
 
     },
@@ -19,7 +19,7 @@ export default[
         id:3,
         productname:"Jay",
         mnfname:"unghf",
-        delete:"ydh",
+        
         medicinetype:"Branded"
 
     },
@@ -27,7 +27,7 @@ export default[
         id:4,
         productname:"Rohit",
         mnfname:"our",
-        delete:"ydh",
+    
         medicinetype:"Genric"
 
     }
