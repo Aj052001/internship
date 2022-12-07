@@ -20,6 +20,9 @@ import Addbul from "./Addbul";
 import Ordertable from "./Ordertable";
 import Navbar from "./Navbar";
 import Updateproduct from "./Updateporduct";
+import Offers from "./Offers";
+import Returntable from "./Returntable";
+import Payouttable from "./Payouttable";
 
 export default function Routerpage() {
   return (
@@ -46,6 +49,9 @@ export default function Routerpage() {
           <Route path="/ordertable" component={Ordertable} />
           <Route path="/navbar" component={Navbar} />
           <Route path="/updateproduct" component={Updateproduct} />
+          <Route path="/offer" component={Offers} />
+          <Route path="/returntable" component={Returntable} />
+          <Route path="/payouttable" component={Payouttable} />
         </Switch>
       </Router>
     </>

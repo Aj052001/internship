@@ -231,10 +231,10 @@ export default function Distributordetailsr() {
                       </form>
 
                       {/* button */}
-                      <div class="col-12">
+                      <div className="col-12">
                         <button
                           type="button"
-                          class="btn btn-primary"
+                          className="btn btn-primary"
                           style={{
                             backgroundColor: "Darkblue",
                             border: "Darkblue",

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import 'bootstrap/dist/css/bootstrap.css';
+
 import Dropdown from "react-bootstrap/Dropdown";
 
 export default function Sidebar() {
@@ -18,16 +18,14 @@ export default function Sidebar() {
       <div className="menu-inner-shadow"></div>
 
       <ul className="menu-inner py-1">
-      <li class="menu-item ">
-              <Link to="/" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Dashboard</div>
-              </Link>
-            </li>
-     
+        <li className="menu-item ">
+          <Link to="/" className="menu-link">
+            <i className="menu-icon tf-icons bx bx-home-circle"></i>
+            <div data-i18n="Analytics">Dashboard</div>
+          </Link>
+        </li>
 
-
-      { /* Vendor Management */}
+        {/* Vendor Management */}
         <li className="menu-item active">
           <Dropdown>
             <Dropdown.Toggle
@@ -58,9 +56,7 @@ export default function Sidebar() {
           </Dropdown>
         </li>
 
-
-
-{/* Retailer Management */}
+        {/* Retailer Management */}
         <li className="menu-item">
           <Dropdown>
             <Dropdown.Toggle
@@ -90,8 +86,6 @@ export default function Sidebar() {
             </Dropdown.Menu>
           </Dropdown>
         </li>
-
-
 
         {/* Products */}
         <li className="menu-item">
@@ -125,13 +119,12 @@ export default function Sidebar() {
         </li>
 
         {/* Orgders */}
-        <li class="menu-item ">
-              <Link to="/ordertable" class="menu-link">
-              <i className="menu-icon tf-icons bx bx-box"></i>
-                <div data-i18n="Analytics">Orders</div>
-              </Link>
-            </li>
-
+        <li className="menu-item ">
+          <Link to="/ordertable" className="menu-link">
+            <i className="menu-icon tf-icons bx bx-box"></i>
+            <div data-i18n="Analytics">Orders</div>
+          </Link>
+        </li>
 
         {/* Settings */}
         <li className="menu-item ">
@@ -177,7 +170,7 @@ export default function Sidebar() {
 
             <Dropdown.Menu>
               <li className="menu-item active">
-                <Link to="/distributorlist" className="menu-link">
+                <Link to="/offer" className="menu-link">
                   <div data-i18n="Without menu">Create Offers</div>
                 </Link>
               </li>
@@ -189,8 +182,20 @@ export default function Sidebar() {
             </Dropdown.Menu>
           </Dropdown>
         </li>
-
-
+        {/*Returns  */}
+        <li className="menu-item ">
+          <Link to="/returntable" className="menu-link">
+            <i className="menu-icon tf-icons bx bx-box"></i>
+            <div data-i18n="Analytics">Returns</div>
+          </Link>
+        </li>
+        {/* Payout Req */}
+        <li className="menu-item ">
+          <Link to="/payouttable" className="menu-link">
+            <i className="menu-icon tf-icons bx bx-box"></i>
+            <div data-i18n="Analytics">Payout Req</div>
+          </Link>
+        </li>
       </ul>
     </aside>
   );

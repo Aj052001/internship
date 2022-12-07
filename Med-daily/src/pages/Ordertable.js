@@ -30,28 +30,28 @@ export default function Ordertable() {
               {/* Filter Button  */}
               <div className="card-header d-flex justify-content-between align-items-center">
                 <h5 className="mb-0"></h5>
-                <div class="btn-group">
+                <div className="btn-group">
                   <button
                     type="button"
-                    class="btn btn-secondary dropdown-toggle"
+                    className="btn btn-secondary dropdown-toggle"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
                     Filters
                   </button>
-                  <ul class="dropdown-menu">
+                  <ul className="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);">
+                      <a className="dropdown-item" href="javascript:void(0);">
                         Filter by date
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);">
+                      <a className="dropdown-item" href="javascript:void(0);">
                         Order id
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="javascript:void(0);">
+                      <a className="dropdown-item" href="javascript:void(0);">
                         Distributor id
                       </a>
                     </li>

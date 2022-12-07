@@ -4,17 +4,7 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import Distributordata from "./Distributordata";
 export default function Distributorlist() {
-  // const distributorlist = Distributordata.map((item) => {
-  //   return (
-  //     <Distributortable
-  //       key={item.id}
-  //       Name={item.firstname}
-  //       bname={item.mnfname}
-  //       delete={item.delete}
-  //       medicinetype={item.medicinetype}
-  //     />
-  //   );
-  // }); 
+ 
   return (
     <>
       <div className="layout-wrapper layout-content-navbar">
