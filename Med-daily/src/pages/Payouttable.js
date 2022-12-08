@@ -18,24 +18,24 @@ export default function Payouttable() {
                   <div className="card">
                     <h5 className="card-header">Payout Request</h5>
                     <div className="table-responsive text-nowrap">
-                      <table className="table">
+                      <table   className="table">
                         <thead>
                           <tr>
-                            <th>Request ID</th>
-                            <th>Vendor name</th>
-                            <th>Amount</th>
-                            <th>Created</th>
+                            <th style={{padding:".625rem 6.25rem"}} >Request ID</th>
+                            <th style={{padding:".625rem 6.25rem"}} >Vendor name</th>
+                            <th style={{padding:".625rem 6.25rem"}} >Amount</th>
+                            <th style={{padding:".625rem 6.25rem"}}  >Created</th>
                           </tr>
                         </thead>
                         <tbody className="table-border-bottom-0">
                           <tr>
-                            <td>
+                            <td style={{padding:".625rem 6.25rem"}} >
                               <i className="fab fa-angular fa-lg text-danger me-3"></i>{" "}
                               <strong>1</strong>
                             </td>
-                            <td>Rohit</td>
-                            <td>9090</td>
-                            <td>
+                            <td style={{padding:".625rem 6.25rem"}} >Rohit</td>
+                            <td style={{padding:".625rem 6.25rem"}} >9090</td>
+                            <td style={{padding:".625rem 6.25rem"}} >
                               <div className="card-header d-flex justify-content-between align-items-center">
                                 <h5 className="mb-0"></h5>
                                 <div className="btn-group">

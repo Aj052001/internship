@@ -5,13 +5,13 @@ export default function producttbody(props) {
     <>
       <tbody className="table-border-bottom-0">
         <tr>
-          <td>
+          <td style={{padding:".625rem 5.25rem"}} >
             <i className="fab fa-angular fa-lg text-danger me-3"></i>
             {props.productname}
           </td>
-          <td>{props.mnfname}</td>
-          <td>{props.medicinetype}</td>
-          <td>  <div className="card-header d-flex justify-content-between align-items-center">
+          <td style={{padding:".625rem 5.25rem"}} >{props.mnfname}</td>
+          <td style={{padding:".625rem 5.25rem"}} >{props.medicinetype}</td>
+          <td style={{padding:".625rem 5.25rem"}} >  <div className="card-header d-flex justify-content-between align-items-center">
                     <h5 className="mb-0"></h5>
                     <div className="btn-group">
                       <button

@@ -1,16 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 export default function Login() {
+
+
   return (
     <>
-      <div className="container-xxl">
-        <div className="authentication-wrapper authentication-basic container-p-y">
+      <div class="container-xxl" style={{width:"45rem"}}>
+        <div className="authentication-wrapper authentication-basic container-p-y" >
           <div className="authentication-inner">
             <div className="card">
               <div className="card-body">
-                <div className="app-brand justify-content-center">
+                <div className="app-brand justify-content-center" style={{padding:"1rem .5rem"}}>
                   <Link to="index.html" className="app-brand-link gap-2">
-                    <img src="../assets/img/logo.png" alt="true" />
+                    <img src="../assets/img/logo.png" alt="user" />
                   </Link>
                 </div>
 
@@ -21,7 +23,7 @@ export default function Login() {
                   method="POST"
                 >
                   <div className="mb-3">
-                    <label for="email" className="form-label">
+                    <label for="email" className="form-label float-start">
                       Email or Username
                     </label>
                     <input

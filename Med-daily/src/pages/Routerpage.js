@@ -24,6 +24,7 @@ import Offers from "./Offers";
 import Returntable from "./Returntable";
 import Payouttable from "./Payouttable";
 
+
 export default function Routerpage() {
   return (
     <>
@@ -52,6 +53,7 @@ export default function Routerpage() {
           <Route path="/offer" component={Offers} />
           <Route path="/returntable" component={Returntable} />
           <Route path="/payouttable" component={Payouttable} />
+         
         </Switch>
       </Router>
     </>

@@ -68,10 +68,10 @@ const product = productdata.map((item) => {
                   <table className="table">
                     <thead>
                       <tr>
-                        <th> Product Name</th>
-                        <th>Mnf Name</th>
-                        <th>Medicine Type</th>
-                        <th>Action</th>
+                        <th style={{padding:".625rem 5.25rem"}} > Product Name</th>
+                        <th style={{padding:".625rem 5.25rem"}} >Mnf Name</th>
+                        <th style={{padding:".625rem 5.25rem"}} >Medicine Type</th>
+                        <th style={{padding:".625rem 5.25rem"}} >Action</th>
                       </tr>
                     </thead>
                     {product}
