@@ -13,7 +13,7 @@ function Ham() {
         document.body.style.overflow="visible";
       setTimeout(() => {
         setSidebar(!sidebar);
-      }, 2000);
+      }, 200);
     } else {
       document.body.style.overflow="hidden";
       setTimeout(() => {

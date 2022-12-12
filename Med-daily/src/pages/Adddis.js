@@ -2,8 +2,48 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
-
+import { useState } from "react";
 export default function Adddis() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [businessName, setSetBusinessName] = useState("");
+  const [postalCode, setPostalCode] = useState("");
+  const [city, setCity] = useState("");
+  const [area, setArea] = useState("");
+  const [country, setCountry] = useState("");
+  const [distributorType, setDistributorType] = useState("");
+  const [gstNo, setgstNo] = useState("");
+  const [gstFile, setGstFile] = useState("");
+  const [panNo, setPanNo] = useState("");
+  const [panImage, setPanImage] = useState("");
+
+  const myCountry = [
+    { name: "Australia", value: "Australia" },
+    { name: "Bangladesh", value: "Bangladesh" },
+    { name: "Belarus", value: "Belarus" },
+    { name: "Brazil", value: "Brazil" },
+    { name: "Canada", value: "Canada" },
+    { name: "China", value: "China" },
+    { name: "France", value: "France" },
+    { name: "Germany", value: "Germany" },
+    { name: "India", value: "India" },
+    { name: "Indonesia", value: "Indonesia" },
+    { name: "Israel", value: "Israel" },
+    { name: "Italy", value: "Italy" },
+    { name: "Japan", value: "Japan" },
+    { name: "Korea", value: "Korea" },
+    { name: "Mexico", value: "Mexico" },
+    { name: "Philippines", value: "Philippines" },
+    { name: "Russia", value: "Russia" },
+    { name: "South", value: "South" },
+    { name: "Thailand", value: "Thailand" },
+    { name: "Turkey", value: "Turkey" },
+    { name: "Ukraine", value: "Ukraine" },
+    { name: "United Arab Emirates", value: "United Arab Emirates" },
+  ];
+ 
   return (
     <>
       <div className="layout-wrapper layout-content-navbar">
@@ -34,7 +74,7 @@ export default function Adddis() {
                         <div className="row">
                           <div className="mb-3 col-md-6">
                             <label
-                              for="firstName"
+                              htmlFor="firstName"
                               className="form-label float-start"
                             >
                               First Name
@@ -44,13 +84,14 @@ export default function Adddis() {
                               type="text"
                               id="firstName"
                               name="firstName"
-                              value="John"
+                              value={firstName}
                               autofocus
                             />
                           </div>
+
                           <div className="mb-3 col-md-6">
                             <label
-                              for="lastName"
+                              htmlFor="lastName"
                               className="form-label float-start"
                             >
                               Last Name
@@ -60,13 +101,14 @@ export default function Adddis() {
                               type="text"
                               name="lastName"
                               id="lastName"
-                              value="Doe"
+                              value={lastName}
                             />
                           </div>
+
                           <div className="mb-3 col-md-6">
                             <label
                               className="form-label float-start"
-                              for="phoneNumber"
+                              htmlFor="phoneNumber"
                             >
                               Phone Number
                             </label>
@@ -77,13 +119,18 @@ export default function Adddis() {
                                 id="phoneNumber"
                                 name="phoneNumber"
                                 className="form-control"
+                                value={phoneNumber}
                                 placeholder="202 555 0111"
                               />
                             </div>
                           </div>
+
+                        
+                        
+
                           <div className="mb-3 col-md-6">
                             <label
-                              for="email"
+                              htmlFor="email"
                               className="form-label float-start"
                             >
                               E-mail
@@ -93,13 +140,14 @@ export default function Adddis() {
                               type="text"
                               id="email"
                               name="email"
-                              value="john.doe@example.com"
+                              value={email}
                               placeholder="john.doe@example.com"
                             />
                           </div>
+
                           <div className="mb-3 col-md-6">
                             <label
-                              for="organization"
+                              htmlhtmlFor="organization"
                               className="form-label float-start"
                             >
                               Business name
@@ -107,14 +155,15 @@ export default function Adddis() {
                             <input
                               type="text"
                               className="form-control"
-                              id="organization"
-                              name="organization"
-                              value="ThemeSelection"
+                              id="businessName"
+                              name="businessName"
+                              value={businessName}
                             />
                           </div>
+
                           <div className="mb-3 col-md-6">
                             <label
-                              for="zipCode"
+                              htmlFor="zipCode"
                               className="form-label float-start"
                             >
                               Postal Code
@@ -122,15 +171,17 @@ export default function Adddis() {
                             <input
                               type="text"
                               className="form-control"
-                              id="zipCode"
-                              name="zipCode"
+                              id="postalCode"
+                              name="postalCode"
+                              value={postalCode}
                               placeholder="231465"
                               maxlength="6"
                             />
                           </div>
+
                           <div className="mb-3 col-md-6">
                             <label
-                              for="address"
+                              htmlFor="address"
                               className="form-label float-start"
                             >
                               City
@@ -138,14 +189,16 @@ export default function Adddis() {
                             <input
                               type="text"
                               className="form-control"
-                              id="City"
-                              name="City"
+                              id="city"
+                              name="city"
+                              value={city}
                               placeholder="City"
                             />
                           </div>
+
                           <div className="mb-3 col-md-6">
                             <label
-                              for="state"
+                              htmlFor="state"
                               className="form-label float-start"
                             >
                               Area
@@ -153,8 +206,9 @@ export default function Adddis() {
                             <input
                               className="form-control"
                               type="text"
-                              id="Area"
-                              name="Area"
+                              id="area"
+                              value={area}
+                              name="area"
                               placeholder="Area"
                             />
                           </div>
@@ -162,57 +216,36 @@ export default function Adddis() {
                           <div className="mb-3 col-md-6">
                             <label
                               className="form-label float-start"
-                              for="country"
+                              htmlFor="country"
                             >
                               Distributor Code
                             </label>
                             <select
                               id="country"
-                              className="select2 form-select"
+                              className="select2 form-select" name="country"
                             >
-                              <option value="">Select</option>
-                              <option value="Australia">Australia</option>
-                              <option value="Bangladesh">Bangladesh</option>
-                              <option value="Belarus">Belarus</option>
-                              <option value="Brazil">Brazil</option>
-                              <option value="Canada">Canada</option>
-                              <option value="China">China</option>
-                              <option value="France">France</option>
-                              <option value="Germany">Germany</option>
-                              <option value="India">India</option>
-                              <option value="Indonesia">Indonesia</option>
-                              <option value="Israel">Israel</option>
-                              <option value="Italy">Italy</option>
-                              <option value="Japan">Japan</option>
-                              <option value="Korea">Korea, Republic of</option>
-                              <option value="Mexico">Mexico</option>
-                              <option value="Philippines">Philippines</option>
-                              <option value="Russia">Russian Federation</option>
-                              <option value="South Africa">South Africa</option>
-                              <option value="Thailand">Thailand</option>
-                              <option value="Turkey">Turkey</option>
-                              <option value="Ukraine">Ukraine</option>
-                              <option value="United Arab Emirates">
-                                United Arab Emirates
-                              </option>
-                              <option value="United Kingdom">
-                                United Kingdom
-                              </option>
-                              <option value="United States">
-                                United States
-                              </option>
+<option value="">select</option>
+{myCountry.map((currEle)=>{
+  <option value="">{currEle.name}</option>
+  console.log(currEle.name)
+      })}
+
+
+
                             </select>
                           </div>
-                          <div className="mb-3 col-md-6">
+
+                          <ddistributorTypev className="mb-3 col-md-6">
                             <label
-                              for="language"
+                              htmlFor="language"
                               className="form-label float-start"
                             >
                               Distributor Type
                             </label>
                             <select
-                              id="language"
+                              id="distributorType"
                               className="select2 form-select"
+                              value={distributorType}
                             >
                               <option value="">Select </option>
                               <option value="en">English</option>
@@ -220,10 +253,11 @@ export default function Adddis() {
                               <option value="de">German</option>
                               <option value="pt">Portuguese</option>
                             </select>
-                          </div>
+                          </ddistributorTypev>
+
                           <div className="mb-3 col-md-6">
                             <label
-                              for="timeZones"
+                              htmlFor="gstNo"
                               className="form-label float-start"
                             >
                               Gst No
@@ -231,57 +265,65 @@ export default function Adddis() {
                             <input
                               className="form-control"
                               type="text"
-                              id="gst"
-                              name="gst"
+                              id="gstNo"
+                              name="gstNo"
+                              value={gstNo}
                               placeholder="12123323423"
                             />
                           </div>
+
                           <div className="mb-3 col-md-6">
                             <label
-                              for="timeZones"
+                              htmlFor="gstFile"
                               className="form-label float-start"
                             >
                               Gst img
                             </label>
                             <input
                               className="form-control"
-                              type="text"
-                              id="gst"
-                              name="gst"
+                              type="file"
+                              id="gstFile"
+                              name="gstFile"
+                              value={gstFile}
                               placeholder="view/img.jpg"
                             />
                           </div>
+
                           <div className="mb-3 col-md-6">
                             <label
-                              for="timeZones"
+                              htmlFor="timeZones"
                               className="form-label loat-start"
                             >
                               Pan No
                             </label>
                             <input
-                              className="form-control"
+                              className="form-control float-start"
                               type="text"
-                              id="gst"
-                              name="gst"
+                              id="panNo"
+                              name="panNo"
+                              value={panNo}
                               placeholder="12123323423"
                             />
                           </div>
+
                           <div className="mb-3 col-md-6">
                             <label
-                              for="timeZones"
+                              htmlFor="panImage"
                               className="form-label float-start"
                             >
                               Pan img
                             </label>
                             <input
                               className="form-control"
-                              type="text"
-                              id="gst"
-                              name="gst"
+                              type="file"
+                              id="panImage"
+                              name="panImage"
+                              value={panImage}
                               placeholder="view/img.jpg"
                             />
                           </div>
                         </div>
+
                         <div className="mt-2">
                           <button
                             type="submit"

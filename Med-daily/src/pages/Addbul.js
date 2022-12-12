@@ -31,7 +31,7 @@ export default function Addbul() {
                         method="POST"
                         onsubmit="return false"
                       >
-                        <div className="row">
+                        <div className="row-2">
                           <div className="mb-3 col-md-6">
                             <label
                               className="form-label float-start"
@@ -45,7 +45,9 @@ export default function Addbul() {
                                 className="form-control"
                                 placeholder="upload file"
                               />
+                              
                             </div>
+                          
                           </div>
                         </div>
                         <div className="mt-2">
